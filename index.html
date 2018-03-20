@@ -20,6 +20,91 @@
     <![endif]-->
     <!-- canvas 鼠标动态效果 -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      @media (min-width: 767px) {
+            .threeIcon img {
+                width: 136px;
+            }
+            .threeProduct .am-u-lg-5 {
+                padding: 64px 10px;
+            }
+            .Content_about {
+                width:960px;
+           /*     height:300px;*/
+            }
+            .Content_about {
+                padding: 56px;
+                text-indent: 32px;
+                line-height: 3.0rem;
+                top: -188px;
+            }
+            .footerLogo {
+                padding: 38px 0; 
+                border-right: 1px solid;
+            }
+            .footerLogo img {
+                width: 240px;
+            }
+            .address {
+                border-right: 1px solid; 
+                padding: 20px 18px;
+            }
+            .phone {
+                border-right: 1px solid;
+            }
+            .footerCt {
+                padding:40px;
+            }
+            .mobile {
+                display: none;
+            }
+          }
+
+         @media (min-width: 320px) and (max-width: 767px)  {
+            .Mobile {
+                height:  240px !important;
+            }
+            .threeIcon img {
+                width: 80px;
+            }
+            .threeIcon h5 {
+                font-size: 12px;
+            }
+            .threeProduct img {
+                width: 100%;
+            }
+
+            .threeProduct .am-u-lg-5 {
+                padding: 10px 10px !important;
+            }
+            .Content_about {
+                width: 100%;
+                padding: 16px;
+                text-indent: 26px;
+                line-height: 2.4rem;
+                top: -20px;
+            }
+            .aboutImg {
+                display: none;
+            }
+            .footerLogo {
+                text-align: center;
+            }
+            .footerLogo img {
+                width: 180px;
+                margin: 10px;
+                display: none;
+            }
+            .litile {
+                font-size: 14px;
+            }
+            .mobile {
+                padding-top: 10px;
+            }
+
+        }
+    </style>
+ 
 </head>
 <body style="background:#efeff4">
 <header class="m-hd">
@@ -79,7 +164,7 @@
 </header>
 
 <!--banner -->
-<div data-am-widget="slider" class="am-slider am-slider-i2 " data-am-flexslider>
+<!-- <div data-am-widget="slider" class="am-slider am-slider-i2 " data-am-flexslider>
     <ul class="am-slides">
         <li class="am-slider-images" style="background-image: url(images/banner/01.png)">
             <div class="am-container am-slider-desc">
@@ -96,7 +181,34 @@
         <li class="am-slider-images" style="background-image: url(images/banner/04.png)">
         </li>
     </ul>
-</div>
+</div> -->
+<!-- 测试页面 -->
+
+  <div data-am-widget="slider" class="am-slider am-slider-default Picture_index" data-am-slider='{}'  >
+    <ul class="am-slides">
+        <li>
+            <img class="Mobile" src="images/banner/01.png">
+            <div class="am-slider-desc" style="height: 100%; background-color: rgba(0,0,0,0);padding-top: 400px;">
+                <div class="am-slider-content" style="text-align: center;">
+                    <h2 class="am-slider-title am-animation-slide-left" data-am-scrollspy="{animation: 'slide-left', delay: 100}" style="font-size: 42px;">创新企业定制服务</h2>
+                    <p data-am-scrollspy="{animation:'slide-right', delay: 600}" class="am-animation-slide-right" style="font-size: 24px;">来自尚安科技永不畏惧的创新力量</p>
+                </div>
+            </div>   
+        </li>
+        <li>
+            <img class="Mobile" src="images/banner/02.png">
+        </li>
+        <li>
+            <img class="Mobile" src="images/banner/03.png">
+        </li>
+        <li>
+            <img class="Mobile" src="images/banner/04.png"> 
+        </li>
+    </ul>
+  </div>
+
+
+
 
 
 
@@ -126,22 +238,22 @@
     </section>
 </div>    -->
 <!-- 网格 -->
-<!-- 三大业务 -->
+<!-- 三大业务 --> 
 <div>
     <h4 style="text-align:center; margin-top: 40px;">三大业务</h4>
 </div>
 <div class="am-container">
-    <div class="am-g-fixed"  style="margin: 0 auto; text-align: center;">
+    <div class="am-g-fixed threeIcon"  style="margin: 0 auto; text-align: center;">
         <div class="am-u-sm-4">
-            <img style="width: 136px;" src="images/banner/icon_product.png" alt="产品">
+            <img  src="images/banner/icon_product.png" alt="产品">
             <h5>产品定制</h5>
         </div>
         <div class="am-u-sm-4">
-            <img style="width: 136px;" src="images/banner/icon_system.png" alt="系统">
+            <img  src="images/banner/icon_system.png" alt="系统">
             <h5>系统集成</h5>
         </div>
         <div class="am-u-sm-4">
-            <img style="width: 136px;" src="images/banner/icon_construction.png" alt="工程">
+            <img src="images/banner/icon_construction.png" alt="工程">
             <h5>工程施工</h5>
         </div>
     </div>
@@ -149,43 +261,46 @@
 
 
 <!-- 三大板块 -->
-<div class="am-container" style=" background: #ffffff; padding: 0; box-shadow: 0 0.5px 0.5px;">
+<div class="am-container threeProduct" style=" background: #ffffff; padding: 0; box-shadow: 0 0.5px 0.5px;">
        <!-- 产品定制 -->
     <div class="am-g-fixed">
-        <div class="am-u-sm-7" style="padding: 0;">
-            <img src="images/banner/Product.png" alt="产品图片">
+        <div class="am-u-lg-7" style="padding: 0;">
+            <img class="am-show-lg-only" src="images/banner/Product.png" alt="产品图片">
+            <img class="am-show-md-down" src="images/banner/Product.png" alt="产品图片">
         </div>
-        <div class="am-u-sm-5" style="padding: 64px 10px;">
+        <div class="am-u-lg-5" style="padding: 64px 10px;">
             <h2>产品定制</h2>
             <p>专业的服务团队为您量身定制，优秀的设计方案和后期制作，为您解决一切后顾之忧。</p>
-            <button>了解更多</button>
+            <button ><a href="product.html">了解更多</a></button>
         </div>
     </div>
 </div>
-<div class="am-container" style="background: #fff; margin-top: 20px; padding: 0; box-shadow: 0 0.5px 0.5px;">
+<div class="am-container threeProduct" style="background: #fff; margin-top: 20px; padding: 0; box-shadow: 0 0.5px 0.5px;">
        <!-- 系统集成 -->
     <div class="am-g-fixed">
-        <div class="am-u-sm-5" style="padding: 64px 36px;">
+        <div class="am-u-lg-5" style="padding: 64px 36px;">
             <h2>系统集成</h2>
             <p>丰富的实战经验，解决各类设备、子系统间接口、协议、系统平台、应用软件等一切面向集成的问题。</p>
-            <button>了解更多</button>
+            <button ><a href="system.html">了解更多</a></button>
         </div>
-        <div class="am-u-sm-7" style="padding: 0;">
-            <img style=" float: right;" src="images/banner/System.png" alt="系统图片">
+        <div class="am-u-lg-7" style="padding: 0;">
+            <img class="am-show-lg-only" style=" float: right;" src="images/banner/System.png" alt="系统图片">
+            <img class="am-show-md-down"  src="images/banner/System.png" alt="系统图片">
         </div>
     </div> 
 </div> 
 
-<div class="am-container" style="background: #fff; margin-top: 20px; padding: 0; box-shadow: 0 0.5px 0.5px;" >
+<div class="am-container threeProduct" style="background: #fff; margin-top: 20px; padding: 0; box-shadow: 0 0.5px 0.5px;" >
        <!-- 工程施工 -->
     <div class="am-g-fixed">
-        <div class="am-u-sm-7" style="padding: 0;">
-            <img src="images/banner/Construction.png" alt="工程图片">
+        <div class="am-u-lg-7" style="padding: 0;">
+            <img class="am-show-lg-only" src="images/banner/Construction.png" alt="工程图片">
+            <img class="am-show-md-down" src="images/banner/Construction.png" alt="工程图片">
         </div>
-        <div class="am-u-sm-5" style="padding: 64px 10px;" >
+        <div class="am-u-lg-5" style="padding: 64px 10px;" >
             <h2>工程施工</h2>
             <p>标准化的施工团队确保工程质量、落实工程进度、安全施工、文明施工。</p>
-            <button>了解更多</button>
+           <button ><a href="construction.html">了解更多</a></button>
         </div>
     </div> 
 </div>
@@ -195,39 +310,46 @@
     <h4>关于我们</h4>
 </div>
 <div>
-    <img src="images/banner/About.png" alt="">
-    <div style="margin: 0 auto;width:960px; height:300px;background: #fff; position: relative; top: -188px; box-shadow: 0 1px 4px;">
-          <p style="padding: 56px;text-indent: 32px; line-height: 3.0rem;">深圳市尚安科技有限公司成立于2006是集各类安防监控的研制、生产、销售与工程服务为一体的高科技企业，同时公司也是台湾鼎高系列监控设备的大陆总代理，目前主要业务有产品研制、销售、生产及产品代理、承接工程等。 公司的主营产品有各类红外摄像机，防水摄像机，智能高速球，中速球，恒速球，及网络摄像机、网络视频服务器、网络数字硬盘录像机、网络高速球及网络恒速球等。 公司一直奉行诚实守信做生意，踏踏实实做服务的原则立足社会. 公司是安防监控行业的专业供应商、工程商。</p>
+    <img  src="images/banner/About.png" alt="" class="am-img-responsive aboutImg">
+    <div class="Content_about" style="margin: 0 auto;background: #fff; position: relative; box-shadow: 0 1px 4px;">
+          <p style="">深圳市尚安科技有限公司成立于2006是集各类安防监控的研制、生产、销售与工程服务为一体的高科技企业，同时公司也是台湾鼎高系列监控设备的大陆总代理，目前主要业务有产品研制、销售、生产及产品代理、承接工程等。 公司的主营产品有各类红外摄像机，防水摄像机，智能高速球，中速球，恒速球，及网络摄像机、网络视频服务器、网络数字硬盘录像机、网络高速球及网络恒速球等。 公司一直奉行诚实守信做生意，踏踏实实做服务的原则立足社会. 公司是安防监控行业的专业供应商、工程商。</p>
     </div>
        
 </div>
 
 <!-- 底部联系方式 -->
-<div style="background: #666; color: #fff; padding:40px;">
+<div class="footerCt" style="background: #666; color: #fff; ">
    <div class="am-container" >
         <div class="am-g-fixed">
-            <div class="am-u-sm-3" style="padding: 38px 0; border-right: 1px solid;">
-                <img style="width: 240px;" src="images/logo@2x.png" alt="">
+            <div class="am-u-lg-3 footerLogo" style="">
+                <img style="" src="images/logo@2x.png" alt="">
             </div>
-            <div class="am-u-sm-3" style="border-right: 1px solid; padding: 20px 18px;">
-                <h4>公司地址</h4>
-                <p>福田区广东省深圳市宝安区龙华镇鹊山路口太阳能硅谷1020号</p>
+            <div class="am-u-lg-3 am-show-lg-only address" style="">
+                <p>公司地址</p>
+                <p class="litile">福田区广东省深圳市宝安区龙华镇鹊山路口太阳能硅谷1020号</p>
             </div>
-            <div class="am-u-sm-3" style="border-right: 1px solid;">
-                <h4>联系方式</h4> <br>
-                QQ:123456789 <br>
-                电话：138-1234-8888 <br>
-                邮箱：1381381268@qq.com
+            <div class="am-u-lg-3 am-show-lg-only phone" style="">
+                <p>联系方式</p>
+                <p class="litile">
+                    QQ:123456789 <br>
+                    电话：138-1234-8888 <br>
+                    邮箱：1381381268@qq.com 
+                </p>
+                
             </div>
-            <div class="am-u-sm-3">
-                <img src="images/weixin.png" alt="">
+            <div class="am-u-lg-3">
+                <img class="am-show-lg-only" src="images/weixin.png" alt="">
+            </div>
+            <div class="mobile">
+                <p> 公司地址： 福田区广东省深圳市宝安区龙华镇鹊山路口太阳能硅谷1020号</p>
+                <p> 联系方式： 138-1234-8888  </p>
             </div>
         </div>
     </div> 
 </div>
 
 <!-- footer -->
-<footer style="text-align: center; margin-top: 20px;">Copyright © 深圳尚安科技有限公司</footer>
+<footer style="text-align: center; margin-top: 20px; line-height: 26px;">Copyright © 深圳尚安科技有限公司</footer>
 
 
 <!-- 原来页面 -->
@@ -308,9 +430,9 @@
 
 <!--在这里编写你的代码-->
 
-<script src="js/canvas.js"></script>
+<!-- <script src="js/canvas.js"></script> -->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="js/jquery.min.js"></script>
+<!-- <script src="js/jquery.min.js"></script> -->
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
@@ -335,8 +457,9 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/amazeui.min.js"></script>
 <!--<![endif]-->
-<script src='js/jquery.qrcode.min.js'></script>
-<script src='js/pic_roll.js'></script>
+<!-- <script src='js/jquery.qrcode.min.js'></script>
+<script src='js/pic_roll.js'></script> -->
+
 
 <script type="text/javascript">
 $('.am-slider').flexslider();
@@ -344,11 +467,13 @@ $(function(){
     var str = "http://www.imj2.com";
         $("#code").qrcode({
             render: "table",
-            width: 100,
-            height:100,
+            width: 80,
+            height:80,
             text: str
         });
 })
+
+
 // 二维码生成
 //返回顶部
 function imj2(){

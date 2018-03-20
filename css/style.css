@@ -301,6 +301,14 @@ a:hover,
     padding-top: 75px;
     text-align: left;
   }
+
+  /* 轮播适配*/
+  .Picture_index img {
+    height: 220px !important;
+  }
+  .Mobile {
+    height: 220px;
+  }
 }
 @media screen and (max-width: 479px) {
   .m-hd {
@@ -1057,98 +1065,9 @@ figure.effect-lily:hover p {
   color: #555d6d;
 }
 
-
-/*banner*/
-/*轮播图*/
-  .img-ct img {
-    width: 1920px;
-    height: 680px;
-  }
-  .carousel {
-    width: 100%;
-    height: 680px;
-    position: relative;
-    overflow: hidden;
-    float: left;
-/*    margin: 0 auto;*/
-   /* border: 1px solid #07c5c5;*/
-    box-shadow: 0 1px 10px #07c5c5;
-  }
-  .img-ct {
-    /*width: 6320px;   // 这个宽度不能写死 要用js进行计算  */  
-    position: absolute;
-  }
-  .img-ct li {
-    float: left;
-    position: relative;
-    /*opacity: 0;*/
-  }
-  /* 标题*/
-  .img-ct li a h5 {
-    width: 920px;
-    /*position: absolute;*/
-    top: 0;
-    font-size: 24px;
-    line-height: 24px;
-    color: #333;
-    padding: 10px 0 10px 16px;
-    background: rgba(255,255,255,0.8);
-  }
-
-  /*按钮*/
-  .arrow {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: 1px solid #fff;
-    z-index: 10;
-    position: absolute;
-    top: 50%;
-    text-decoration: none;
-    color: #ffffff;
-    line-height: 40px;
+/*响应式适配*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .m-contact-us {
     text-align: center;
   }
-  .next {
-    right: 10px;
-  }
-  .prev {
-    left: 10px;
-  }
-  .arrow:hover {
-    cursor: pointer;
-    background-color: rgba(0,0,0,0.1);
-  }
-  .arrow:active {
-    background-color: rgba(0,0,0,0.3);
-  }
-  /*显示小圆点*/
-  .dot {
-    z-index: 10;
-    /*width: 400px;*/
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    margin-left: -72px;
-    background-color: rgba(255,255,255,0.3); 
-    border-radius: 15px;
-    text-align: center;
-    /*padding: 4px;*/
-
-
-  }
-  .dot li {
-    float: left;
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    margin: 4px 10px;
-
-    
-  }
-  .dot .active {
-    background: #07c5c5;
-  }
+}
