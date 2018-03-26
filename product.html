@@ -21,7 +21,7 @@
     <!-- canvas 鼠标动态效果 -->
     <link rel="stylesheet" href="css/style.css">
     <style>
-      .ct-panel {
+   /*   .ct-panel {
         height: 540px;
         margin-bottom: 10px;
       }
@@ -46,7 +46,138 @@
       }
       .am-u-sm-5 p {
         line-height: 38px;
-      }
+      }*/
+
+     @media (min-width: 767px) {
+            .threeIcon img {
+                width: 136px;
+            }
+            .threeProduct .am-u-lg-5 {
+                padding: 138px 10px;
+            }
+            .threeProduct {
+                height: 540px;
+                margin-bottom: 10px;
+            }
+            .Content_about {
+                width:960px;
+           /*     height:300px;*/
+            }
+            .Content_about {
+                padding: 56px;
+                text-indent: 32px;
+                line-height: 3.0rem;
+                top: -188px;
+            }
+            .footerLogo {
+                padding: 38px 0; 
+                border-right: 1px solid;
+            }
+            .footerLogo img {
+                width: 240px;
+            }
+            .address {
+                border-right: 1px solid; 
+                padding: 20px 18px;
+            }
+            .phone {
+                border-right: 1px solid;
+            }
+            .footerCt {
+                padding:40px;
+            }
+            .mobile,
+            .systemMobile,
+            .productMobile
+             {
+              display: none;
+            }
+            .productPictureNo1,
+            .productPictureNo3 {
+              padding: 46px 0 0 64px;
+            }
+            .productPictureNo2 {
+              padding: 46px 0 0 104px;
+            }
+
+            .ProductTextNo2 {
+              padding-left: 90px !important;
+            }
+
+            .threeProduct .am-u-lg-5 h2 {
+               font-size: 34px !important;
+               margin: 0 ;
+            }
+
+            .threeProduct .am-u-lg-5 h3 {
+               font-size: 22px !important;
+               margin: 0 ;
+            }
+
+            .threeProduct .am-u-lg-5 p {
+                line-height: 38px;
+            }
+          }
+
+       @media (min-width: 320px) and (max-width: 767px)  {
+            .Mobile {
+                height:  240px !important;
+            }
+            .threeIcon img {
+                width: 80px;
+            }
+            .threeIcon h5 {
+                font-size: 12px;
+            }
+            .threeProduct img {
+                width: 240px;
+                margin: 0 auto;
+              
+            }
+
+            .threeProduct .am-u-lg-5 {
+                padding: 10px 10px !important;
+            }
+            .Content_about {
+                width: 100%;
+                padding: 16px;
+                text-indent: 26px;
+                line-height: 2.4rem;
+                top: -20px;
+            }
+            .aboutImg {
+                display: none;
+            }
+            .footerLogo {
+                text-align: center;
+            }
+            .footerLogo img {
+                width: 180px;
+                margin: 10px;
+                display: none;
+            }
+            .litile {
+                font-size: 14px;
+            }
+            .mobile {
+                padding-top: 10px;
+            }
+            .systemPC,
+            .productPC {
+                display: none;
+            }
+            .productPictureNo1,
+            .productPictureNo2,
+            .productPictureNo3 {
+                margin: 0 auto ;
+            }
+
+            .am-u-lg-5 h3{
+                 margin-top: 0 !important;
+            }
+          
+
+        }
     </style>
 </head>
 <body style="background:#efeff4">
@@ -61,14 +192,18 @@
         <nav>
           <ul class="m-nav am-nav am-nav-pills am-fr">
             <li><a href="index.html" rel="nofollow">网站首页</a></li>
-            <li class="am-dropdown" data-am-dropdown><a href="#" rel="nofollow" class="am-dropdown-toggle" data-am-dropdown-toggle>服务内容 <span class="am-icon-caret-down"></span></a>
+<!--             <li class="am-dropdown" data-am-dropdown><a href="#" rel="nofollow" class="am-dropdown-toggle" data-am-dropdown-toggle>服务内容 <span class="am-icon-caret-down"></span></a>
               <ul class="am-dropdown-content">
                 <li><a href="product.html" rel="nofollow">产品定制开发</a></li>
                 <li><a href="system.html" rel="nofollow">系统集成</a></li>
                 <li><a href="construction.html" rel="nofollow">工程施工</a></li>
               </ul>
-            </li>
-            <li><a href="#" rel="nofollow">关于我们</a></li>
+            </li> -->
+           
+            <li><a href="system.html" rel="nofollow">系统集成</a></li>
+            <li class="am-active"><a href="product.html" rel="nofollow">产品定制</a></li>
+            <li><a href="construction.html" rel="nofollow">工程施工</a></li>
+           <!--  <li><a href="#" rel="nofollow">关于我们</a></li> -->
             <li><a href="#" rel="nofollow">联系我们</a></li>
           </ul>
         </nav>
@@ -97,10 +232,11 @@
       <div class="am-offcanvas-bar am-offcanvas-bar-flip">
         <nav class="am-offcanvas-content">
             <a href="/" rel="nofollow"><span class="logo"></span></a>
-            <p><i class="am-icon-home"></i>  <a href="index/html" rel="nofollow">网站首页</a></p>
-            <p><i class="am-icon-cogs"></i>  <a href="/fuwu.html" rel="nofollow">服务内容</a></p>
-            <p><i class="am-icon-user"></i>  <a href="/about.html" rel="nofollow">关于我们</a></p>
-            <p><i class="am-icon-qq"></i> <a href="/contact.html" rel="nofollow">联系我们</a></p>
+            <p><i class="am-icon-home"></i>  <a href="index.html" rel="nofollow">网站首页</a></p>
+            <p><i class="am-icon-cogs"></i>  <a href="system.html" rel="nofollow">系统集成</a></p>
+            <p><i class="am-icon-codepen"></i>  <a href="product.html" rel="nofollow">产品定制</a></p>
+            <p><i class="am-icon-pied-piper-alt"></i>  <a href="construction.html" rel="nofollow">工程施工</a></p>
+            <p><i class="am-icon-phone"></i> <a href="index.html" rel="nofollow">联系我们</a></p>
         </nav>
       </div>
     </div>
@@ -139,9 +275,10 @@
             </div>   
         </li> -->
         <li>
-            <img src="images/banner/02.png">
+            <img class="Mobile" src="images/banner/02.png">
         </li>
-<!--         <li>
+
+<!--    <li>
             <img src="images/banner/03.png">
         </li>
         <li>
@@ -151,11 +288,12 @@
   </div>
 
 <!-- 简介说明 -->
-<div class="am-container ct-panel" style="background: url(images/panel/panel_bg.png) no-repeat center;">
-  <div class="am-u-sm-7">
-    <img src="images/panel/Product_No1.png" alt="picture">
+<div class="am-container ct-panel threeProduct" style="background: url(images/panel/panel_bg.png) no-repeat center;">
+  <div class="am-u-lg-7 productPictureNo1">
+      <img class="am-show-lg-only"  src="images/panel/Product_No1.png" alt="picture">
+      <img class="am-show-md-down"  src="images/panel/Product_No1.png" alt="picture">
   </div>
-  <div class="am-u-sm-5">
+  <div class="am-u-lg-5">
     <h2>产品需求分析</h2>
     <h3>Product Needs Analysis</h3>
     <p>
@@ -167,27 +305,32 @@
   </div>
 </div>
 
-<div class="am-container ct-panel" style="height:540px;background: url(images/panel/panel_bg_left.png) no-repeat center;">
-  <div class="am-u-sm-5">
+<div class="am-container ct-panel threeProduct" style="height:540px;background: url(images/panel/panel_bg_left.png) no-repeat center;">
+  <div class="am-u-lg-7 productMobile productPictureNo2 ">
+     <img class="am-show-lg-only" src="images/panel/Product_No2.png" alt="picture">
+     <img class="am-show-md-down" src="images/panel/Product_No2.png" alt="picture">
+  </div>
+  <div class="am-u-lg-5 ProductTextNo2">
       <h2>专业设计</h2>
       <h3>Professional Design</h3>
       <p>
         1、拥有多名资深产品工程师、结构工程师、电子工程师、UI工程师 <br>
         2、从初稿、审核、修正、到最后定稿层层验证
-
       </p>
   </div>
-  <div class="am-u-sm-7">
-    <img src="images/panel/Product_No2.png" alt="picture">
+  <div class="am-u-lg-7 productPC productPictureNo2">
+     <img class="am-show-lg-only" src="images/panel/Product_No2.png" alt="picture">
+     <img class="am-show-md-down" src="images/panel/Product_No2.png" alt="picture">
   </div>
 
 </div>
 
-<div class="am-container ct-panel" style="background: url(images/panel/panel_bg.png) no-repeat center;">
-  <div class="am-u-sm-7">
-    <img src="images/panel/Product_No3.png" alt="picture">
+<div class="am-container ct-panel threeProduct" style="background: url(images/panel/panel_bg.png) no-repeat center;">
+  <div class="am-u-lg-7 productPictureNo3">
+     <img class="am-show-lg-only" src="images/panel/Product_No3.png" alt="picture">
+     <img class="am-show-md-down" src="images/panel/Product_No3.png" alt="picture">
   </div>
-  <div class="am-u-sm-5">
+  <div class="am-u-lg-5">
     <h2>生产加工</h2>
     <h3>Production Processing</h3>
     <p>
@@ -200,31 +343,38 @@
 
 
 <!-- 底部联系方式 -->
-<div style="background: #666; color: #fff; padding:40px;">
+<div class="footerCt" style="background: #666; color: #fff; ">
    <div class="am-container" >
         <div class="am-g-fixed">
-            <div class="am-u-sm-3" style="padding: 38px 0; border-right: 1px solid;">
-                <img style="width: 240px;" src="images/logo@2x.png" alt="">
+            <div class="am-u-lg-3 footerLogo" style="">
+                <img style="" src="images/logo@2x.png" alt="">
             </div>
-            <div class="am-u-sm-3" style="border-right: 1px solid; padding: 20px 18px;">
-                <h4>公司地址</h4>
-                <p>福田区广东省深圳市宝安区龙华镇鹊山路口太阳能硅谷1020号</p>
+            <div class="am-u-lg-3 am-show-lg-only address" style="">
+                <p>公司地址</p>
+                <p class="litile">福田区广东省深圳市宝安区龙华镇鹊山路口太阳能硅谷1020号</p>
             </div>
-            <div class="am-u-sm-3" style="border-right: 1px solid;">
-                <h4>联系方式</h4> <br>
-                QQ:123456789 <br>
-                电话：138-1234-8888 <br>
-                邮箱：1381381268@qq.com
+            <div class="am-u-lg-3 am-show-lg-only phone" style="">
+                <p>联系方式</p>
+                <p class="litile">
+                    QQ:123456789 <br>
+                    电话：138-1234-8888 <br>
+                    邮箱：1381381268@qq.com 
+                </p>
+                
             </div>
-            <div class="am-u-sm-3">
-                <img src="images/weixin.png" alt="">
+            <div class="am-u-lg-3">
+                <img class="am-show-lg-only" src="images/weixin.png" alt="">
+            </div>
+            <div class="mobile">
+                <p> 公司地址： 福田区广东省深圳市宝安区龙华镇鹊山路口太阳能硅谷1020号</p>
+                <p> 联系方式： 138-1234-8888  </p>
             </div>
         </div>
     </div> 
 </div>
 
 <!-- footer -->
-<footer style="text-align: center; margin-top: 20px;">Copyright © 深圳尚安科技有限公司</footer>
+<footer style="text-align: center; padding: 10px 0;">Copyright © 深圳尚安科技有限公司</footer>
 <!--在这里编写你的代码-->
 
 <!--[if (gte IE 9)|!(IE)]><!-->

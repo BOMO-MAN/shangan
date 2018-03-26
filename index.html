@@ -55,9 +55,15 @@
             .footerCt {
                 padding:40px;
             }
-            .mobile {
+            .mobile,
+            .systemMobile
+             {
                 display: none;
             }
+            .textMobile p {
+                font-size: 24px;
+            }
+
           }
 
          @media (min-width: 320px) and (max-width: 767px)  {
@@ -101,6 +107,19 @@
             .mobile {
                 padding-top: 10px;
             }
+            .systemPC {
+                display: none;
+            }
+            .textMobile {
+                margin-top: -136px;
+
+            }
+            .textMobile h2 {
+                font-size: 20px !important;
+            }
+            .textMoblie p {
+                font-size: 14px !important;
+            }
 
         }
     </style>
@@ -117,15 +136,19 @@
             </ul> -->
         <nav>
           <ul class="m-nav am-nav am-nav-pills am-fr">
-            <li><a href="#" rel="nofollow">网站首页</a></li>
-            <li class="am-dropdown" data-am-dropdown><a href="#" rel="nofollow" class="am-dropdown-toggle" data-am-dropdown-toggle>服务内容 <span class="am-icon-caret-down"></span></a>
+            <li class="am-active"><a href="#" rel="nofollow">网站首页</a></li>
+<!--             <li class="am-dropdown" data-am-dropdown><a href="#" rel="nofollow" class="am-dropdown-toggle" data-am-dropdown-toggle>服务内容 <span class="am-icon-caret-down"></span></a>
               <ul class="am-dropdown-content">
                 <li><a href="product.html" rel="nofollow">产品定制开发</a></li>
                 <li><a href="system.html" rel="nofollow">系统集成</a></li>
                 <li><a href="construction.html" rel="nofollow">工程施工</a></li>
               </ul>
-            </li>
-            <li><a href="#" rel="nofollow">关于我们</a></li>
+            </li> -->
+          
+            <li ><a href="system.html" rel="nofollow">系统集成</a></li>
+              <li><a href="product.html" rel="nofollow">产品定制</a></li>
+            <li><a href="construction.html" rel="nofollow">工程施工</a></li>
+          <!--   <li><a href="#" rel="nofollow">关于我们</a></li> -->
             <li><a href="#" rel="nofollow">联系我们</a></li>
           </ul>
         </nav>
@@ -155,9 +178,10 @@
         <nav class="am-offcanvas-content">
             <a href="/" rel="nofollow"><span class="logo"></span></a>
             <p><i class="am-icon-home"></i>  <a href="/" rel="nofollow">网站首页</a></p>
-            <p><i class="am-icon-cogs"></i>  <a href="/fuwu.html" rel="nofollow">服务内容</a></p>
-            <p><i class="am-icon-user"></i>  <a href="/about.html" rel="nofollow">关于我们</a></p>
-            <p><i class="am-icon-qq"></i> <a href="/contact.html" rel="nofollow">联系我们</a></p>
+            <p><i class="am-icon-cogs"></i>  <a href="system.html" rel="nofollow">系统集成</a></p>
+            <p><i class="am-icon-codepen"></i>  <a href="product.html" rel="nofollow">产品定制</a></p>
+            <p><i class="am-icon-pied-piper-alt"></i>  <a href="construction.html" rel="nofollow">工程施工</a></p>
+            <p><i class="am-icon-phone"></i> <a href="/contact.html" rel="nofollow">联系我们</a></p>
         </nav>
       </div>
     </div>
@@ -189,9 +213,9 @@
         <li>
             <img class="Mobile" src="images/banner/01.png">
             <div class="am-slider-desc" style="height: 100%; background-color: rgba(0,0,0,0);padding-top: 400px;">
-                <div class="am-slider-content" style="text-align: center;">
+                <div class="am-slider-content textMobile" style="text-align: center;">
                     <h2 class="am-slider-title am-animation-slide-left" data-am-scrollspy="{animation: 'slide-left', delay: 100}" style="font-size: 42px;">创新企业定制服务</h2>
-                    <p data-am-scrollspy="{animation:'slide-right', delay: 600}" class="am-animation-slide-right" style="font-size: 24px;">来自尚安科技永不畏惧的创新力量</p>
+                    <p data-am-scrollspy="{animation:'slide-right', delay: 600}" class="am-animation-slide-right">来自尚安科技永不畏惧的创新力量</p>
                 </div>
             </div>   
         </li>
@@ -275,7 +299,7 @@
         </div>
     </div>
 </div>
-<div class="am-container threeProduct" style="background: #fff; margin-top: 20px; padding: 0; box-shadow: 0 0.5px 0.5px;">
+<div class="am-container threeProduct systemPC" style="background: #fff; margin-top: 20px; padding: 0; box-shadow: 0 0.5px 0.5px;">
        <!-- 系统集成 -->
     <div class="am-g-fixed">
         <div class="am-u-lg-5" style="padding: 64px 36px;">
@@ -286,6 +310,22 @@
         <div class="am-u-lg-7" style="padding: 0;">
             <img class="am-show-lg-only" style=" float: right;" src="images/banner/System.png" alt="系统图片">
             <img class="am-show-md-down"  src="images/banner/System.png" alt="系统图片">
+        </div>
+    </div> 
+</div> 
+
+<div class="am-container threeProduct systemMobile" style="background: #fff; margin-top: 20px; padding: 0; box-shadow: 0 0.5px 0.5px;">
+       <!-- 系统集成 -->
+    <div class="am-g-fixed">
+       
+        <div class="am-u-lg-7" style="padding: 0;">
+            <img class="am-show-lg-only" style=" float: right;" src="images/banner/System.png" alt="系统图片">
+            <img class="am-show-md-down"  src="images/banner/System.png" alt="系统图片">
+        </div>
+         <div class="am-u-lg-5" style="padding: 64px 36px;">
+            <h2>系统集成</h2>
+            <p>丰富的实战经验，解决各类设备、子系统间接口、协议、系统平台、应用软件等一切面向集成的问题。</p>
+            <button ><a href="system.html">了解更多</a></button>
         </div>
     </div> 
 </div> 
@@ -349,7 +389,7 @@
 </div>
 
 <!-- footer -->
-<footer style="text-align: center; margin-top: 20px; line-height: 26px;">Copyright © 深圳尚安科技有限公司</footer>
+<footer style="text-align: center; padding: 10px 0; line-height: 26px;">Copyright © 深圳尚安科技有限公司</footer>
 
 
 <!-- 原来页面 -->
