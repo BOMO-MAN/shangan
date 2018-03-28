@@ -17,8 +17,10 @@
     <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
     <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.js"></script>
 
+
     <![endif]-->
     <!-- canvas 鼠标动态效果 -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=itiL1C0Ih0ndQgWZCmPhqHrxuFdnbphH"></script>
     <link rel="stylesheet" href="css/style.css">
     <style>
         @media (min-width: 767px) {
@@ -62,7 +64,7 @@
             }
 
             .ct-panel {
-              height: 540px;
+              height: 440px;
               margin-bottom: 10px;
             }
             .am-u-lg-5;.am-u-lg-7 {
@@ -101,6 +103,20 @@
             }
             .systemTextNo2 {
               padding: 96px 0 0 70px !important;
+            }
+
+            .am-u-lg-4 {
+              text-align: center;
+              margin-top: 76px;
+            }
+            .am-u-lg-4 img {
+              width: 126px;
+            }
+            .line {
+              width: 60px;
+              height: 2px;
+              background-color: #8e8e93;
+              display: inline-block;
             }
 
           }
@@ -152,6 +168,26 @@
             .am-u-lg-5 h3{
                  margin-top: 0 !important;
             }
+
+            .am-u-lg-4 img {
+              float: left;
+              width: 64px;
+            }
+            .am-u-lg-4 div {
+              float: left;
+              position: relative;
+              left: 22px;
+            }
+            .am-u-lg-4 p {
+              margin-top: 0 !important;
+
+            }
+            .am-u-lg-4 h3 {
+              margin-bottom:  1.0rem !important;
+            }
+            .line {
+              display: none;
+            }
         }
     </style>
 </head>
@@ -175,10 +211,10 @@
               </ul>
             </li> -->
            
-            <li class="am-active"><a href="system.html" rel="nofollow">系统集成</a></li>
-             <li><a href="product.html" rel="nofollow">产品定制</a></li>
+            <li><a href="system.html" rel="nofollow">系统集成</a></li>
+            <li><a href="product.html" rel="nofollow">产品定制</a></li>
             <li><a href="construction.html" rel="nofollow">工程施工</a></li>
-            <li><a href="contact.html" rel="nofollow">联系我们</a></li>
+            <li class="am-active"><a href="contact.html" rel="nofollow">联系我们</a></li>
           </ul>
         </nav>
         </section>
@@ -239,30 +275,43 @@
 
   <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}' >
     <ul class="am-slides">
-<!--         <li>
-            <img src="images/banner/01.png">
-            <div class="am-container am-slider-desc">
-                <div class="am-slider-content">
-                    <h2 class="am-slider-title am-animation-slide-left" data-am-scrollspy="{animation: 'slide-left', delay: 100}">创新企业定制服务</h2>
-                    <p data-am-scrollspy="{animation:'slide-right', delay: 600}" class="am-animation-slide-right">来自尚安科技永不畏惧的创新力量</p>
-                </div>
-            </div>   
-        </li>
         <li>
-            <img src="images/banner/02.png">
-        </li> -->
-        <li>
-            <img class="Mobile" src="images/banner/03.png">
+            <img class="Mobile" src="images/banner/contact.png">
         </li>
-<!--         <li>
-            <img src="images/banner/04.png"> 
-        </li> -->
     </ul>
   </div>
 
 <!-- 简介说明 -->
 <div class="am-container ct-panel threeProduct " style="background: url(images/panel/panel_bg.png) no-repeat center;">
-  <div class="am-u-lg-7 systemPictureNo1">
+    <div class="am-u-lg-4">
+      <img src="images/contact/address_icon.png" alt="">
+      <div>
+         <h3>地址</h3>
+         <p>深圳市南山区关口二路智恒产业园</p>
+         <span class="line"></span>
+      </div>
+     
+    </div>
+    <div class="am-u-lg-4">
+      <img src="images/contact/phone_icon.png" alt="">
+      <div>
+          <h3>电话</h3>
+          <p>138-2225-1236</p>
+          <span class="line"></span>
+      </div>
+   
+    </div>
+    <div class="am-u-lg-4">
+      <img src="images/contact/QQ_icon.png" alt="">
+  
+      <div>
+          <h3>QQ</h3>
+          <p>5001234897</p>
+          <span class="line"></span>
+      </div>
+    </div>
+
+  <!-- <div class="am-u-lg-7 systemPictureNo1">
     <img class="am-show-lg-only" src="images/panel/System_No1.png" alt="picture">
     <img class="am-show-md-down" src="images/panel/System_No1.png" alt="picture">
   </div>
@@ -275,48 +324,13 @@
       <br>
       3、连锁酒店监控系统、酒店监控设计布置安装方案
     </p>
-  </div>
+  </div> -->
+</div>
+<div class="am-container" style="margin: 20px auto; height:360px;">
+  <div id="allmap" style="width:100%;height:100%;"></div>
 </div>
 
-<div class="am-container ct-panel threeProduct " style="height:540px;background: url(images/panel/panel_bg_left.png) no-repeat center;">
-  <div class="am-u-lg-7 systemMobile ">
-    <img class="am-show-lg-only" src="images/panel/System_No2.png" alt="picture">
-    <img class="am-show-md-down" src="images/panel/System_No2.png" alt="picture">
-  </div>
 
-  <div class="am-u-lg-5 systemTextNo2">
-      <h2>设计优势</h2>
-      <h3>Design Advantages</h3>
-      <p>
-        1、免费上门勘测，量身定制监控安装工程设计方案 <br>
-        2、拥有多名专业资深设计师
-        <br>
-        3、提供最全面、最有效、最省钱的解决方案
-      </p>
-  </div>
-  <div class="am-u-lg-7 systemPC systemPictureNo2">
-    <img class="am-show-lg-only" src="images/panel/System_No2.png" alt="picture">
-    <img class="am-show-md-down" src="images/panel/System_No2.png" alt="picture">
-  </div>
-
-</div>
-
-<div class="am-container ct-panel threeProduct " style="background: url(images/panel/panel_bg.png) no-repeat center;">
-  <div class="am-u-lg-7 systemPictureNo3">
-    <img class="am-show-lg-only" src="images/panel/System_No3.png" alt="picture">
-    <img class="am-show-md-down" src="images/panel/System_No3.png" alt="picture">
-  </div>
-  <div class="am-u-lg-5 systemTextNo3">
-    <h2>施工优势</h2>
-    <h3>Construction Advantages</h3>
-    <p>
-      1、拥有12年安防智能化施工经验 <br>
-      2、拥有自己专业的施工团队；让你安心、身心、放心
-      <br>
-      3、拥有广东省安全技术防范系统设计、施工、维修资质证书。
-    </p>
-  </div>
-</div>
 
 
 <!-- 底部联系方式 -->
@@ -363,8 +377,32 @@
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <script src="js/amazeui.min.js"></script>
-<script>
 
+<script type="text/javascript">
+  // 百度地图API功能
+  var map = new BMap.Map("allmap");    // 创建Map实例
+  map.addControl(new BMap.ScaleControl());  // 比例尺
+  map.centerAndZoom(new BMap.Point(114.063115,22.547923), 16);  // 初始化地图,设置中心点坐标和地图级别
+  //添加地图类型控件
+  map.addControl(new BMap.MapTypeControl({
+    mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));   
+  map.setCurrentCity("深圳");          // 设置地图显示的城市 此项是必须设置的
+  map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+  // 百度地图API功能
+  // var map = new BMap.Map("allmap");
+  var point = new BMap.Point(114.063115,22.547923);
+  map.centerAndZoom(point, 16);
+  var marker = new BMap.Marker(point);  // 创建标注
+  map.addOverlay(marker);              // 将标注添加到地图中
+
+  var label = new BMap.Label("我是文字标注哦",{offset:new BMap.Size(20,-10)});
+  marker.setLabel(label);
 </script>
+
+
 </body>
 </html>
