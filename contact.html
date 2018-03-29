@@ -249,7 +249,7 @@
       <img src="images/contact/address_icon.png" alt="">
       <div>
          <h3>地址</h3>
-         <p>深圳市南山区关口二路智恒产业园</p>
+         <p>深圳市龙华区观澜街道碧澜路286号鸿联鹰科技园D栋4楼</p>
          <span class="line"></span>
       </div>
      
@@ -258,7 +258,7 @@
       <img src="images/contact/phone_icon.png" alt="">
       <div>
           <h3>电话</h3>
-          <p>138-2225-1236</p>
+          <p>150-1382-6365</p>
           <span class="line"></span>
       </div>
    
@@ -268,7 +268,7 @@
   
       <div>
           <h3>QQ</h3>
-          <p>5001234897</p>
+          <p>274566305</p>
           <span class="line"></span>
       </div>
     </div>
@@ -291,14 +291,14 @@
             </div>
             <div class="am-u-lg-3 am-show-lg-only address" style="">
                 <p>公司地址</p>
-                <p class="litile">福田区广东省深圳市宝安区龙华镇鹊山路口太阳能硅谷1020号</p>
+                <p class="litile">深圳市龙华区观澜街道碧澜路286号鸿联鹰科技园D栋4楼</p>
             </div>
             <div class="am-u-lg-3 am-show-lg-only phone" style="">
                 <p>联系方式</p>
                 <p class="litile">
-                    QQ:123456789 <br>
-                    电话：138-1234-8888 <br>
-                    邮箱：1381381268@qq.com 
+                    QQ:274566305 <br>
+                    电话：150-1382-6365 <br>
+                    邮箱：market@shang-an.com
                 </p>
                 
             </div>
@@ -306,8 +306,8 @@
                 <img class="am-show-lg-only" src="images/weixin.png" alt="">
             </div>
             <div class="mobile">
-                <p> 公司地址： 福田区广东省深圳市宝安区龙华镇鹊山路口太阳能硅谷1020号</p>
-                <p> 联系方式： 138-1234-8888  </p>
+                <p> 公司地址： 深圳市龙华区观澜街道碧澜路286号鸿联鹰科技园D栋4楼</p>
+                <p> 联系方式： 150-1382-6365  </p>
             </div>
         </div>
     </div> 
@@ -331,7 +331,7 @@
   // 百度地图API功能
   var map = new BMap.Map("allmap");    // 创建Map实例
   map.addControl(new BMap.ScaleControl());  // 比例尺
-  map.centerAndZoom(new BMap.Point(114.063115,22.547923), 16);  // 初始化地图,设置中心点坐标和地图级别
+  map.centerAndZoom(new BMap.Point(114.048068,22.725873), 16);  // 初始化地图,设置中心点坐标和地图级别
   //添加地图类型控件
   map.addControl(new BMap.MapTypeControl({
     mapTypes:[
@@ -343,12 +343,12 @@
 
   // 百度地图API功能
   // var map = new BMap.Map("allmap");
-  var point = new BMap.Point(114.063115,22.547923);
+  var point = new BMap.Point(114.048068,22.725873);
   map.centerAndZoom(point, 16);
   var marker = new BMap.Marker(point);  // 创建标注
   map.addOverlay(marker);              // 将标注添加到地图中
 
-  var label = new BMap.Label("我是文字标注哦",{offset:new BMap.Size(20,-10)});
+  var label = new BMap.Label("深圳市尚安科技有限公司",{offset:new BMap.Size(20,-10)});
   marker.setLabel(label);
 </script>
 
